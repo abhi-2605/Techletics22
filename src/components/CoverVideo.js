@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import MainVideo from "./Walking Girl.mp4";
+
 import pic from "./a.png"
 import {motion} from 'framer-motion';
 const VideoContainer = styled.section`
