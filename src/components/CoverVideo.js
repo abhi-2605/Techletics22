@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import pic from "./a.png"
+import pic from "./c.png"
 import {motion} from 'framer-motion';
 const VideoContainer = styled.section`
 width:100%;
@@ -81,7 +81,7 @@ const CoverVideo = () => {
   
 
     return(
-        <VideoContainer style={{marginTop:"5%"}}>
+        <VideoContainer style={{marginTop:"3%"}}>
             {/* <DarkOverlay/> */}
                 {/* <Title variants ={container} intial="hidden" animate="show">
                     <div style={{color:"#01afb6"}} >

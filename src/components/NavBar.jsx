@@ -7,7 +7,7 @@ width:100vw;
 
 z-index:6;
 position:absolute;
-top:${props=>props.click ? "0":`-${props.theme.navHeight}`};
+top:1;
 
 display:flex;
 justify-content:center;
@@ -19,42 +19,42 @@ transistion:all 0.3s ease;
 const MenuItems = styled(motion.li)`
 position:relative;
 height:${props=>props.theme.navHeight};
-background-color:#a3d5e0;
-color:${props=>props.theme.text};
+background-color: white;
+color: black;
 list-style:none;
-
-display:flex;
-justify-content:space-around;
-align-items:center;
-
-width:100%;
-padding:0 10rem;
-`
-
-const MenuBtn=styled.li`
-background-color:#a3d5e0;
-list-style-type:style none;
-color:${props=>props.theme.body};
-width:15rem;
-height:2.5rem;
-clip-path:polygon(0 0,100% 0,80% 100%,20% 100%);
-
-position:absolute;
-top:100%;
-left:50%;
-transform:translateX(-50%);
-
 
 display:flex;
 justify-content:center;
 align-items:center;
 
-font-size:${props=>props.theme.fontmd};
-font-weight:600;
-text-transform:uppercase;
-cursor:pointer;
-
+width:100%;
+padding:0 5rem;
 `
+
+// const MenuBtn=styled.li`
+// background-color:#a3d5e0;
+// list-style-type:style none;
+// color:${props=>props.theme.body};
+// width:15rem;
+// height:2.5rem;
+// clip-path:polygon(0 0,100% 0,80% 100%,20% 100%);
+
+// position:absolute;
+// top:100%;
+// left:50%;
+// transform:translateX(-50%);
+
+
+// display:flex;
+// justify-content:center;
+// align-items:center;
+
+// font-size:${props=>props.theme.fontmd};
+// font-weight:600;
+// text-transform:uppercase;
+// cursor:pointer;
+
+// `
 
 const MenuItem = styled.li`
 text-transform:uppercase;
@@ -63,30 +63,15 @@ color:${props=>props.theme.text};
 
 
 const NavBar = () => {
-    const [click, setClick]=useState(false);
+    // const [click, setClick]=useState(false);
   return (
-    <NavContainer click={click} initial={{y:'-100%'}} animate={{
-        y:0
-    }}
-    transition={{
-        duration:2 ,delay:.1
-    }}>
-        <MenuItems drag="y"
-        dragConstraints={{
-            top:0,
-            bottom:70
-        }}
-        dragElastic={0.05}
-        dragSnapToOrigin
-        >
-       <MenuBtn onClick={()=>setClick(!click)}>
-           Menu
-        </MenuBtn>
-        <MenuItem whileHover={{scale:1.1,y:-5}} whileTap={{scale:0.9 ,Y:0}}>Register</MenuItem>
-        <MenuItem whileHover={{scale:1.1,y:-5}} whileTap={{scale:0.9 ,Y:0}}>About Us</MenuItem>
-        <MenuItem whileHover={{scale:1.1,y:-5}} whileTap={{scale:0.9 ,Y:0}}>Events</MenuItem>
-        <MenuItem whileHover={{scale:1.1,y:-5}} whileTap={{scale:0.9 ,Y:0}}>Sponsors</MenuItem>
-        </MenuItems>
+    <NavContainer>
+       
+        <MenuItems>Register</MenuItems>
+        <MenuItems >About Us</MenuItems>
+        <MenuItems >Events</MenuItems>
+        <MenuItems >Sponsors</MenuItems>
+        
   </NavContainer>
   )
 }

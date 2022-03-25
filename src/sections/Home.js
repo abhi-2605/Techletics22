@@ -6,13 +6,13 @@ import NavBar from "../components/NavBar";
 
 const Section =styled.section`
 psition:relative;
-min-height:200vh;
+min-height:100vh;
 overflow:hidden;
 `
 const Home=()=>{
     return(
         <Section>
-            {/* <NavBar/> */}
+            <NavBar/>
         <CoverVideo/>
         {/* <Logo/> */}
        
