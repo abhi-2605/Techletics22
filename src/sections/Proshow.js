@@ -200,20 +200,19 @@ const Proshow = () => {
       </Title>
       <Left>
         <p>
-          The brand new collection is currently being developed in USA. We
-          create our products using best quality material, including the use of
-          some of the pure fabrics to make our products. All products are made
-          using the best materials, from the finest cotton to the finest
-          fabrics.
+        Techletics ‘22 is the Tech Fest of Christ College of Engineering that is intended 
+      to be conducted in the first week of May, 2022. Techletics ‘22 is the second 
+      chapter to the rendezvous of innovation and zest, which began first in 2019 with Techletics‘19.
           <br />
           <br />
-          We have lots of different clothing options like shoes, jackets and
-          dresses. Not only clothes but we also provide unique Jewellery as
-          well. It is great for us to carry our new clothes all around the
-          country and look different.
+          Techletics ‘22 is the Tech Fest of Christ College of Engineering that is intended 
+      to be conducted in the first week of May, 2022. Techletics ‘22 is the second 
+      chapter to the rendezvous of innovation and zest, which began first in 2019 with Techletics‘19.
         </p>
       </Left>
       <Right ref={horizontalRef}>
+        <Product img={img1} title="ProShow" />
+        <Product img={img1} title="ProShow" />
         <Product img={img1} title="ProShow" />
         <Product img={img1} title="ProShow" />
         <Product img={img1} title="ProShow" />

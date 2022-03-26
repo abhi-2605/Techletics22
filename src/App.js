@@ -12,6 +12,7 @@ import { useRef } from 'react';
 import About from './sections/About';
 import Proshow from './sections/Proshow';
 import ScrollTriggerProxy from './components/ScrollTriggerProxy';
+import Banner from './sections/Banner';
 
 const App=()=> {
   const containerRef=useRef(null)
@@ -44,7 +45,7 @@ const App=()=> {
     <Home/>
     <About/>
     <Proshow/>
-    
+    <Banner/>
   </main>
   </AnimatePresence>
 </LocomotiveScrollProvider>
