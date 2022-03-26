@@ -4,11 +4,9 @@ import styled from 'styled-components'
 
 const NavContainer=styled(motion.div)`
 width:100vw;
-
 z-index:6;
 position:absolute;
 top:1;
-
 display:flex;
 justify-content:center;
 align-items:center;
@@ -16,7 +14,7 @@ align-items:center;
 transistion:all 0.3s ease;
 
 `
-const MenuItems = styled(motion.li)`
+const MenuItems = styled.li`
 position:relative;
 height:${props=>props.theme.navHeight};
 background-color: white;
@@ -28,8 +26,8 @@ justify-content:center;
 align-items:center;
 
 width:100%;
-height:100%
-padding:0 5rem;
+height:100%;
+padding:1rem;
 `
 
 // const MenuBtn=styled.li`

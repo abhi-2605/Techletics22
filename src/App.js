@@ -9,6 +9,9 @@ import '../node_modules/locomotive-scroll/dist/locomotive-scroll.css'
 import { AnimatePresence } from 'framer-motion';
 // const { scroll } = useLocomotiveScroll()
 import { useRef } from 'react';
+import About from './sections/About';
+import Proshow from './sections/Proshow';
+import ScrollTriggerProxy from './components/ScrollTriggerProxy';
 
 const App=()=> {
   const containerRef=useRef(null)
@@ -34,11 +37,14 @@ const App=()=> {
   }
   containerRef={containerRef}
 >
-
+<ScrollTriggerProxy/>
   <AnimatePresence>
   
-  <main data-scroll-container ref={containerRef}>
+  <main className='App' data-scroll-container ref={containerRef}>
     <Home/>
+    <About/>
+    <Proshow/>
+    
   </main>
   </AnimatePresence>
 </LocomotiveScrollProvider>
