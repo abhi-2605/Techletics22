@@ -12,8 +12,9 @@ const VideoContainer = styled.section`
     
 
     @media (max-width: 48em) {
-     
-      
+      image-rendering: auto;
+      image-rendering: crisp-edges;
+      image-rendering: pixelated;
       height:100%;
       width:100%
     }

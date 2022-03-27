@@ -126,6 +126,9 @@ const Item = styled(motion.div)`
 
   @media (max-width: 48em) {
     width: 15rem;
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
   }
 `;
 
