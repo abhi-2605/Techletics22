@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 
-import img1 from "../components/images/prevtech2.jpg";
-import img2 from "../components/images/prevtech3.jpg";  
-import img3 from "../components/images/prevtech1.jpg";
+import img1 from "../assets/images/prevtech2.jpg";
+import img2 from "../assets/images/prevtech3.jpg";  
+import img3 from "../assets/images/prevtech1.jpg";
 
 const Section = styled.section`
   position: relative;
@@ -19,12 +19,13 @@ const Section = styled.section`
   @media (max-width: 30em) {
     width: 100vw;
   }
+  
 `;
 const Title = styled.h1`
   font-size: ${(props) => props.theme.fontBig};
   font-family: "Kaushan Script";
   font-weight: 300;
-
+  color:white;
   position: absolute;
   top: 1rem;
   left: 5%;
@@ -42,6 +43,7 @@ const Title = styled.h1`
 const Left = styled.div`
   width: 50%;
   font-size: ${(props) => props.theme.fontlg};
+  color:white;
   font-weight: 300;
   position: relative;
   z-index: 5;

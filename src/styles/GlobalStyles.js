@@ -12,6 +12,7 @@ const GlobalStyle = createGlobalStyle `
  body{
      font-family :"Sirin Stencil";
      overflow-x :hidden;
+     background-color :#202020;
  }
  h1,h2,h3,h4,h5,h6{
      margin:0;

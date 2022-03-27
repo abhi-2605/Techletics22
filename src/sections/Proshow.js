@@ -5,7 +5,7 @@ import styled from "styled-components";
 import { useRef } from "react";
 
 import { motion } from "framer-motion";
-import img1 from "../components/images/prevtech2.jpg";
+import img1 from "../assets/images/prevtech3.jpg";
 
 
 const Section = styled.section`
@@ -34,9 +34,11 @@ const Title = styled.h1`
 
   @media (max-width: 64em) {
     font-size: ${(props) => props.theme.fontxxl};
+    color:white;
   }
   @media (max-width: 48em) {
     font-size: ${(props) => props.theme.fontxl};
+    color:white;
   }
 `;
 
@@ -64,6 +66,7 @@ const Left = styled.div`
   @media (max-width: 64em) {
     p {
       font-size: ${(props) => props.theme.fontmd};
+      color:white;
     }
   }
 
@@ -71,12 +74,14 @@ const Left = styled.div`
     width: 40%;
     p {
       font-size: ${(props) => props.theme.fontsm};
+      color:white;
     }
   }
 
   @media (max-width: 30em) {
     p {
       font-size: ${(props) => props.theme.fontxs};
+      color:white;
     }
   }
 `;

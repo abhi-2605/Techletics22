@@ -17,8 +17,8 @@ transistion:all 0.3s ease;
 const MenuItems = styled.li`
 position:relative;
 height:${props=>props.theme.navHeight};
-background-color: white;
-color: black;
+background-color: #202020;
+color: white;
 list-style:none;
 
 display:flex;

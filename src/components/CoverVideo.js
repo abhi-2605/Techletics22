@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 import { motion } from "framer-motion";
-import pic from ".//images/c.png"
+import pic from "../assets/images/b.png"
 const VideoContainer = styled.section`
   width: 100%;
   height: 100vh;
