@@ -2,23 +2,26 @@ import React from "react";
 import styled from "styled-components";
 
 import { motion } from "framer-motion";
-import pic from "../assets/images/b.png"
+import pic from "../assets/images/c.png"
 const VideoContainer = styled.section`
   width: 100%;
   height: 100vh;
   position: relative;
 
-  video {
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
+  img {
+    
 
     @media (max-width: 48em) {
-      object-position: center 10%;
+     
+      
+      height:100%;
+      width:100%
     }
   }
   @media (max-width: 30em) {
     object-position: center 50%;
+   
+    
   }
 `;
 const DarkOverlay = styled.div`
@@ -143,7 +146,7 @@ const CoverVideo = () => {
           Inspire. Create. Belive
         </motion.h2>
       </Title> */}
-      <img src={pic} alt="" style={{width:"100%" , height:"100%"}} />
+      <img src={pic} alt="" style={{height:'100%',width:'100%'}}/>
     </VideoContainer>
   );
 };

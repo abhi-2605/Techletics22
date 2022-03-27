@@ -18,7 +18,7 @@ const ScrollTriggerProxy = () => {
           return arguments.length
             ? scroll.scrollTo(value, 0, 0)
             : scroll.scroll.instance.scroll.y;
-        }, // we don't have to define a scrollLeft because we're only scrolling vertically.
+        }, 
         getBoundingClientRect() {
           return {
             top: 0,

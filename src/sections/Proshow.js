@@ -14,7 +14,7 @@ const Section = styled.section`
   width: 100vw;
   margin: 0 auto;
   overflow: hidden;
-
+  
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -163,12 +163,12 @@ const Proshow = () => {
           trigger: element,
           start: "top top",
           end: pinWrapWidth,
-          scroller: ".App", // locomotive element
+          scroller: ".App",
           scrub: true,
           pin: true,
           // markers:true,
         },
-        // we have to increase scrolling height of this section same as the scrolling element width
+      
         height: `${scrollingElement.scrollWidth}px`,
         ease: "none,",
       });
@@ -179,12 +179,12 @@ const Proshow = () => {
           trigger: scrollingElement,
           start: "top top",
           end: pinWrapWidth,
-          scroller: ".App", // locomotive element
+          scroller: ".App", 
           scrub: true,
 
           // markers:true,
         },
-        // we have to increase scrolling height of this section same as the scrolling element width
+        
         x: -pinWrapWidth,
         ease: "none,",
       });
@@ -192,7 +192,7 @@ const Proshow = () => {
     }, 1000);
 
     return () => {
-      // Let's clear instances
+     
       t1.kill();
       ScrollTrigger.kill();
     };

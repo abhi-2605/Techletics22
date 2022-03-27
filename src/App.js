@@ -8,14 +8,24 @@ import Home from './sections/Home';
 import '../node_modules/locomotive-scroll/dist/locomotive-scroll.css' 
 import { AnimatePresence } from 'framer-motion';
 // const { scroll } = useLocomotiveScroll()
-import { useRef } from 'react';
+import { useRef ,useState,useEffect } from 'react';
 import About from './sections/About';
 import Proshow from './sections/Proshow';
 import ScrollTriggerProxy from './components/ScrollTriggerProxy';
 import Banner from './sections/Banner';
+import NewEvents from './sections/NewEvents';
+import Loader from './components/Loader';
 
 const App=()=> {
   const containerRef=useRef(null)
+  const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoaded(true);
+    }, 3000);
+  }, [])
+  
   return (
     <>
     <GlobalStyle/>
@@ -38,6 +48,10 @@ const App=()=> {
   }
   containerRef={containerRef}
 >
+
+<AnimatePresence>
+        {loaded ? null : <Loader/>}
+</AnimatePresence>
 <ScrollTriggerProxy/>
   <AnimatePresence>
   
@@ -46,6 +60,7 @@ const App=()=> {
     <About/>
     <Proshow/>
     <Banner/>
+    <NewEvents/>
   </main>
   </AnimatePresence>
 </LocomotiveScrollProvider>

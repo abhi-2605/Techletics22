@@ -25,7 +25,7 @@ const Title = styled.h1`
   font-size: ${(props) => props.theme.fontBig};
   font-family: "Kaushan Script";
   font-weight: 300;
-  color:white;
+  color:black;
   position: absolute;
   top: 1rem;
   left: 5%;
@@ -43,7 +43,8 @@ const Title = styled.h1`
 const Left = styled.div`
   width: 50%;
   font-size: ${(props) => props.theme.fontlg};
-  color:white;
+  color:black;
+ 
   font-weight: 300;
   position: relative;
   z-index: 5;
@@ -54,7 +55,7 @@ const Left = styled.div`
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) !important;
+    transform: translate(-50%, -50%) ;
     margin: 0 auto;
 
     padding: 2rem;
