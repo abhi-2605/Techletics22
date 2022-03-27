@@ -26,11 +26,12 @@ const Container = styled(motion.div)`
   color: ${(props) => props.theme.text};
 
   svg {
-    width: 10vw;
+    width: 20vw;
     height: auto;
     overflow: visible;
     stroke-linejoin: round;
     stroke-linecap: round;
+   
 
     g {
       path {
@@ -47,7 +48,7 @@ const Container = styled(motion.div)`
 `;
 
 const Text = styled(motion.span)`
-  font-size: ${(props) => props.theme.fontxl};
+  font-size: ${(props) => props.theme.fontxxl};
   color: ${(props) => props.theme.text};
   font-family:Kaushan Script;
   padding-top: 0.5rem;
@@ -66,7 +67,7 @@ const textVariants = {
 
     transition: {
       duration: 1,
-      yoyo: Infinity,
+      
       ease: "easeInOut",
     },
   },
@@ -96,7 +97,7 @@ const Loader = () => {
         opacity: 1,
       }}
       exit={{
-        y: "100%",
+        y: "-100%",
         opacity: 0,
       }}
       transition={{

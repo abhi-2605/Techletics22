@@ -23,7 +23,7 @@ const App=()=> {
   useEffect(() => {
     setTimeout(() => {
       setLoaded(true);
-    }, 3000);
+    }, 2000);
   }, [])
   
   return (
