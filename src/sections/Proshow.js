@@ -202,7 +202,7 @@ const Proshow = () => {
   }, []);
 
   return (
-    <Section ref={ref} id="shop">
+    <Section ref={ref} id="event">
       <Title data-scroll data-scroll-speed="-1">
         Events
       </Title>

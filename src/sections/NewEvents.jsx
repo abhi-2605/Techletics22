@@ -203,7 +203,7 @@ const NewEvents = () => {
   }, []);
 
   return (
-    <Section ref={ref} id="new-arrival">
+    <Section ref={ref} id="proshow">
       <Overlay />
       <Title
         data-scroll
