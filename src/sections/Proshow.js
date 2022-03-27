@@ -5,7 +5,10 @@ import styled from "styled-components";
 import { useRef } from "react";
 
 import { motion } from "framer-motion";
-import img1 from "../assets/images/prevtech3.jpg";
+import img1 from "../assets/images/p1.jpeg";
+import img2 from "../assets/images/p2.jpeg"
+import img3 from "../assets/images/p3.jpeg"
+
 
 
 const Section = styled.section`
@@ -220,17 +223,17 @@ const Proshow = () => {
       </Left>
       <Right ref={horizontalRef}>
         <Product img={img1} title="ProShow" />
+        <Product img={img2} title="ProShow" />
+        <Product img={img3} title="ProShow" />
         <Product img={img1} title="ProShow" />
+        <Product img={img2} title="ProShow" />
+        <Product img={img3} title="ProShow" />
         <Product img={img1} title="ProShow" />
+        <Product img={img2} title="ProShow" />
+        <Product img={img3} title="ProShow" />
         <Product img={img1} title="ProShow" />
-        <Product img={img1} title="ProShow" />
-        <Product img={img1} title="ProShow" />
-        <Product img={img1} title="ProShow" />
-        <Product img={img1} title="ProShow" />
-        <Product img={img1} title="ProShow" />
-        <Product img={img1} title="ProShow" />
-        <Product img={img1} title="ProShow" />
-        <Product img={img1} title="ProShow" />
+        <Product img={img2} title="ProShow" />
+        <Product img={img3} title="ProShow" />
       </Right>
     </Section>
   );
